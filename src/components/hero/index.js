@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom'
 import VideoModal from '../../components/ModalVideo'
 
-import client1 from '../../images/slider/client1.png'
-import client2 from '../../images/slider/client2.png'
-import client3 from '../../images/slider/client3.png'
-import client4 from '../../images/slider/client4.png'
+import client1 from '../../images/main/man1.png'
+import client2 from '../../images/main/man2.png'
+import client3 from '../../images/main/man3.png'
+import client4 from '../../images/main/man4.png'
 
-import hero from '../../images/slider/right-img2.png'
+import hero from '../../images/main/right.png'
 
 
 
@@ -26,13 +26,14 @@ class Hero extends Component {
                                     <span>We bring the right people together.</span>
                                 </div>
                                 <div className="wpo-hero-title">
-                                    <h2>Helping You Solve Your Problems</h2>
+                                    <h2>Golden Light</h2>
                                 </div>
                                 <div className="wpo-hero-subtitle">
                                     <p>Facilitating client learning—that is, teaching clients how to resolve similar problems in the future.</p>
                                 </div>
                                 <div className="btns">
-                                    <Link to="/about" className="btn theme-btn">Get Started</Link>
+                          
+                                    <Link to="#about" className="btn theme-btn">About Us</Link>
                                 </div>
                             </div>
                         </div>
@@ -58,12 +59,7 @@ class Hero extends Component {
                             </div>
                         </div>
                     </div> 
-                </div>  
-                <div className="pop-up-video">
-                    <div className="video-holder">
-                        <VideoModal/>
-                    </div>
-                </div> 
+                </div>   
             </section>
         )
     }

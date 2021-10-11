@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo-main.png'
 import {Link}  from 'react-router-dom'
 import MobileMenu from '../../components/MobileMenu'
 
@@ -42,7 +42,7 @@ export default class Header extends Component {
                         </div>
                         <div className="col-lg-3 col-md-6 col-6">
                             <div className="navbar-header">
-                                <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
+                                <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img style={{"max-width": "150px"}} src={Logo}
                                         alt=""/></Link>
                             </div>
                         </div>
@@ -51,60 +51,21 @@ export default class Header extends Component {
                                 <button className="menu-close"><i className="ti-close"></i></button>
                                 <ul className="nav navbar-nav mb-2 mb-lg-0">
                                     <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} to="/">Home</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link onClick={ClickHandler} to="/home">Home style 1</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/home2">Home style 2</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/home3">Home style 3</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                    <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} to="/">Services</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link onClick={ClickHandler} to="/service">Service</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/service-s2">Service style 2</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/service-single">Service Single</Link></li>
-                                        </ul>
+                                        <Link  to="#about">About us</Link>
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} to="/">Projects</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link onClick={ClickHandler} to="/project">Project</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/project-s2">Project Style 2</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/project-single">Project Single</Link></li>
-                                        </ul>
+                                        <Link onClick={ClickHandler} to="#strategy">Strategy</Link>
+                                       
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} to="/">Pages</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link onClick={ClickHandler} to="/pricing">Pricing</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/testimonial">Testimonial</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/404">Error 404</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/login">Login</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/register">Register</Link></li>
-                                        </ul>
+                                        <Link onClick={ClickHandler} to="#investments">Investments</Link>
+                                       
                                     </li>
                                     <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} to="/blog">Blog</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/blog-left-sidebar">Blog left sidebar</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/blog-fullwidth">Blog fullwidth</Link></li>
-                                            <li className="menu-item-has-children">
-                                                <Link onClick={ClickHandler} to="/">Blog details</Link>
-                                                <ul className="sub-menu">
-                                                    <li><Link onClick={ClickHandler} to="/blog-single">Blog details right sidebar</Link>
-                                                    </li>
-                                                    <li><Link onClick={ClickHandler} to="/blog-single-left-sidebar">Blog details left
-                                                            sidebar</Link></li>
-                                                    <li><Link onClick={ClickHandler} to="/blog-single-fullwidth">Blog details
-                                                            fullwidth</Link></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        <Link onClick={ClickHandler} to="#team">Team</Link>
+                                        
                                     </li>
-                                    <li><Link onClick={ClickHandler} to="contact">Contact</Link></li>
+                                    <li><Link onClick={ClickHandler} to="#contacts">Contacts</Link></li>
                                 </ul>
         
                             </div>
@@ -112,23 +73,7 @@ export default class Header extends Component {
                         <div className="col-lg-3 col-md-2 col-2">
                             <div className="header-right">
                                 <div className="close-form">
-                                    <Link onClick={ClickHandler} className="theme-btn" to="contact">Free Consulting</Link>
-                                </div>
-                                <div className="header-search-form-wrapper">
-                                    <div className="cart-search-contact">
-                                        <button onClick={this.searchHandler} className="search-toggle-btn"><i
-                                                className={`${isSearchShow ? 'ti-close' : 'ti-search'}`}></i></button>
-                                        <div className={`header-search-form ${isSearchShow ? 'header-search-content-toggle' : ''}`}>
-                                            <form onSubmit={SubmitHandler}>
-                                                <div>
-                                                    <input type="text" className="form-control"
-                                                        placeholder="Search here..."/>
-                                                    <button type="submit"><i
-                                                            className="fi flaticon-magnifiying-glass"></i></button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                                    <Link onClick={ClickHandler} className="theme-btn" to="contact">Get in touch</Link>
                                 </div>
                             </div>
                         </div>
